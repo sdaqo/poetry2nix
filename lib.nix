@@ -1,6 +1,6 @@
 { lib, pyproject-nix, pkgs, ... }:
 let
-  inherit (import ./vendor/pyproject.nix/lib/util.nix { inherit lib; }) splitComma;
+  inherit (import ./vendor/pyproject.nix/lib/lib.nix { inherit lib; }) splitComma;
 
   fromTOML = builtins.fromTOML or
     (
