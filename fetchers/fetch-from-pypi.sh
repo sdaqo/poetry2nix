@@ -15,7 +15,7 @@ curl="curl            \
  --progress-bar       \
  --fail               \
  $curlOpts            \
- $NIX_CURL_FLAGS"
+ ${NIX_CURL_FLAGS:-}"
 
 echo "Trying to fetch with predicted URL: $predictedURL"
 
